@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+}
+
+///////////////////////////////////////////////////////////
+///-------------------- TYPOGRAPHY ------------------- ///
+//////////////////////////////////////////////////////////
+
+::selection {
+  color: $primaryColor;
+  background: $fourthColor;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-size: 10px;
+  font-family: $secondaryFont;
+  color: $primaryColor;
+}
+
+body {
+  position: relative;
+  overflow-y: scroll;
+  min-height: 500px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $primaryFont;
+  margin: 0.3em 0;
+  font-weight: inherit;
+  line-height: 1em;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {font-size: 6.854em;}
+
+h2 {font-size: 4.236em;}
+
+h3 {font-size: 2.618em;}
+
+h4 {font-size: 1.618em;}
+
+p {
+  letter-spacing: -0.05em;
+}
+
+.text__secondary-font {
+  font-family: $secondaryFont;
+}
+
+.text__uppercase { text-transform: uppercase; }
+
+.text__align-left { text-align: center; @include mappy-bp(med){ text-align: left; }}
+.text__align-right { text-align: center; @include mappy-bp(med){ text-align: right; }}
+.text__align-center { text-align: center; }
+
+.text__size-xlarge { font-size: 6em; }
+.text__size-large { font-size: 4em; }
+.text__size-med { font-size: 2.6em; }
+.text__size-small { font-size: 1.5em; }
+.text__size-xsmall { font-size: 0.8em; }
+
+
+.text__padding-top { padding-top: 3em; }
+
+a {
+  color: $thirdColor;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+///////////////////////////////////////////////////////////
+///--------------------- SVG --------------------- ///
+//////////////////////////////////////////////////////////
+
+svg.icons__contact {
+  width: 2em;
+  height: 2em;
+  padding: 0.3em;
+  transform: translateY(0.5em);
+}
+
+
+///////////////////////////////////////////////////////////
+///--------------------- COLORS --------------------- ///
+//////////////////////////////////////////////////////////
+
+.text__secondary-color {
+  color: $secondaryColor;
+}
+
+.text__third-color {
+  color: $thirdColor;
+}
+
+.text__fourth-color {
+  color: $fourthColor;
+}
+
+.text__light {
+  color: $lightGrey;
+}
+
+.__primary-color {
+  background: $primaryColor;
+}
+
+.__secondary-color {
+  background: $secondaryColor;
+}
+
+.__third-color {
+  background: $thirdColor;
+}
+
+.__fourth-color {
+  background: $fourthColor;
+}
+
+.__light {
+  background: $lightGrey;
+}
+
+///////////////////////////////////////////////////////////
+///--------------------- SECTIONS --------------------- ///
+//////////////////////////////////////////////////////////
+
+.section {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  overflow: visible;
+
+}
+
+.section__full {
+  min-height: 100vh;
+}
+
+.section__auto {
+  height: auto;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: index($absoluteElements, overlay);
+}
+
+
+
+///////////////////////////////////////////////////////////
+///----------------------- GRID ----------------------- ///
+//////////////////////////////////////////////////////////
+
+body {
+  display: flex;
+  flex-flow: row;
+}
+
+.wrapper, .content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.wrapper {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.grid, .grid__columns {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  z-index: index($absoluteElements, content);
+}
+
+.grid__columns {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.grid__full {
+  flex: 1;
+  height: 100%;
+  align-items: stretch;
+  padding: 5em 0;
+
+  @include mappy-bp(med){
+    padding: 0;
+  }
+}
+
+.grid__nowrap {
+  flex-wrap: nowrap;
+}
+
+.column {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1;
+}
+
+.col-1, .col-3, .col-4, .col-6, .col-12 {
+  flex: 100%;
+}
+
+@include mappy-bp(med){
+  .col-1 { flex: 12%; }
+  .col-3 { flex: 25%; }
+  .col-4 { flex: 32%; }
+  .col-6 { flex: 50%; }
+  .col-12 { flex: 100%; }
+}
+
+
+.item {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.item.__flex-end {
+  align-items: flex-end;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.profile-photo {
+  display: block;
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  margin: 1em auto;
+  padding: 1em;
+  background: center center no-repeat;
+  background-size: 150%;
+  border-radius: 50%;
+
+  &:hover {
+    border: 5px $fourthColor solid;
+  }
+
+}
+
+
+
+///////////////////////////////////////////////////////////
+///----------------------- NAV ----------------------- ///
+//////////////////////////////////////////////////////////
+
+nav {
+  display: flex;
+  flex: 1;
+}
+
+.nav__main {
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav--align-right {
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+
+    &.active {
+      a {
+        border-bottom: 3px solid $fourthColor;
+        text-decoration: none;
+      }
+    }
+  }
+
+  a {
+    line-height: 1em;
+    margin: 0.3em 0;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 3px solid $transparent;
+    font-size: 2em;
+    color: $secondaryColor;
+
+    &:hover {
+      border-bottom: 3px solid $fourthColor;
+      text-decoration: none;
+    }
+  }
+
+}
+
+
+
+///////////////////////////////////////////////////////////
+///----------------------- HEADER ----------------------- ///
+//////////////////////////////////////////////////////////
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header__main {
+  position: fixed;
+  background: $opaqueWhite;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  z-index: index($absoluteElements, headerMain);
+}
+
+///////////////////////////////////////////////////////////
+///----------------------- FOOTER ----------------------- ///
+//////////////////////////////////////////////////////////
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.footer__main {
+  flex: 1 0 $footer__main-height;
+}
+
+
+///////////////////////////////////////////////////////////
+///----------------------- BUTTONS ----------------------- ///
+//////////////////////////////////////////////////////////
+
+button {
+  display: flex;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 0.3em;
+  font-family: $secondaryFont;
+  font-size: 2em;
+}
+
+.button__primary {
+  background: none;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+
+  &:hover {
+    background: $primaryColor;
+    color: $secondaryColor;
+  }
+}
+
+///////////////////////////////////////////////////////////
+///-------------------- MEDIA QUERIES ----------------- ///
+//////////////////////////////////////////////////////////
+
+.hide-on-small {
+  display: none;
+
+  @include mappy-bp(large){
+    display: flex;
+  }
+}
+.show-on-small {
+  display: flex;
+  @include mappy-bp(med){
+    display: none;
+  }
+}

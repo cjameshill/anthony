@@ -1,9 +1,30 @@
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+@import url(https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css);
+
+@import "../../../bower_components/mappy-breakpoints/mappy-breakpoints";
+
+// Reset
+@import "_reset";
+
+// Z-Index
+$absoluteElements: underlay, content, headerMain, overlay;
 
 // Variables
-@import "variables";
+@import "_variables";
+
+// Globals
+@import "_globals";
+
+// Custom
+@import "_custom";
+
+// Custom
+@import "_styles";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
