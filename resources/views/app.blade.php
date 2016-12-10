@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta id="_token" value="{{ csrf_token() }}">
     <title>ANTHONY CANGELOSI</title>
     <link rel="stylesheet" href="{{ URL::to('css/app.css') }}">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
