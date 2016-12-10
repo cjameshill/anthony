@@ -136,7 +136,7 @@
         </div>
     </div>
 
-    <div id="about-me" class="section section__full __secondary-color">
+    <div id="about-me" class="section section__full __fourth-color">
         <div class="grid grid__columns">
             <div class="column col-12">
                 <div class="item __flex-end"><p class="section__header text__light text__size-xlarge text__align-right">About Me</p></div>

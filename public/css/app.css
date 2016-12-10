@@ -228,7 +228,7 @@ body {
 .grid__full {
   -webkit-box-flex: 1;
   flex: 1;
-  height: 100%;
+  height: auto;
   -webkit-box-align: stretch;
   align-items: stretch;
   padding: 5em 0; }
