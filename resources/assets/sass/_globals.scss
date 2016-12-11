@@ -133,7 +133,7 @@ svg.icons__contact {
 .section {
   display: flex;
   position: relative;
-  flex: 1;
+  flex: auto;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
@@ -143,11 +143,15 @@ svg.icons__contact {
 }
 
 .section__full {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .section__auto {
   height: auto;
+
+  @include mappy-bp(med){
+    height: 100vh;
+  }
 }
 
 .overlay {
@@ -195,13 +199,10 @@ body {
 
 .grid__full {
   flex: 1;
-  height: auto;
+  height: 100%;
   align-items: stretch;
-  padding: 5em 0;
+  margin: 5em 0;
 
-  @include mappy-bp(med){
-    padding: 0;
-  }
 }
 
 .grid__nowrap {

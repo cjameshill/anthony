@@ -11,7 +11,7 @@
   z-index: index($absoluteElements, underlay);
   
   @include mappy-bp(med){
-    display: flex;
+    display: block;
   }
 
   img {

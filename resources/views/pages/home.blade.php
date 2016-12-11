@@ -56,7 +56,7 @@
     </div>
 
 
-    <div class="section section__full __primary-color">
+    <div class="section section__auto __primary-color">
         <div class="grid grid__columns grid__full">
             <div class="column col-4">
                 <div data-aos="fade-right" class="item">
@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    <div id="education" class="section section__full __secondary-color">
+    <div id="education" class="section section__auto __secondary-color">
         <div class="grid grid__columns">
             <div class="column col-12">
                 <div class="item __flex-end"><p class="section__header text__light text__size-xlarge text__align-right">Education</p></div>
@@ -111,7 +111,7 @@
         </div>
     </div>
 
-    <div class="section section__full __primary-color">
+    <div class="section section__auto __primary-color">
         <div class="grid grid__columns grid__full">
             <div class="column col-4">
                 <div data-aos="fade-right" class="item">
@@ -136,7 +136,7 @@
         </div>
     </div>
 
-    <div id="about-me" class="section section__full __fourth-color">
+    <div id="about-me" class="section section__auto __secondary-color">
         <div class="grid grid__columns">
             <div class="column col-12">
                 <div class="item __flex-end"><p class="section__header text__light text__size-xlarge text__align-right">About Me</p></div>
@@ -145,7 +145,7 @@
         <div class="grid grid__columns grid__full">
             <div class="column col-6">
                 <div data-aos="fade-right" class="item">
-                    <div class="profile-photo profile-photo__about-me" style="background-image: url('/images/scottgrant.jpg');"></div>
+                    <div class="profile-photo profile-photo__about-me" style="background-image: url('/images/anthony.jpg');"></div>
                 </div>
             </div>
             <div class="column col-6">
