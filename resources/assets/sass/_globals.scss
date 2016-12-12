@@ -43,6 +43,8 @@ h3 {font-size: 2.618em;}
 h4 {font-size: 1.618em;}
 
 p {
+  margin: 0.3em 0;
+  line-height: 1.3em;
   letter-spacing: -0.05em;
 }
 
@@ -143,14 +145,14 @@ svg.icons__contact {
 }
 
 .section__full {
-  height: 100vh;
+  height: 125vh;
 }
 
 .section__auto {
   height: auto;
 
   @include mappy-bp(med){
-    height: 100vh;
+    height: 125vh;
   }
 }
 
@@ -189,6 +191,7 @@ body {
   display: flex;
   width: 90%;
   margin: 0 auto;
+  max-width: 1400px;
   z-index: index($absoluteElements, content);
 }
 
@@ -201,7 +204,7 @@ body {
   flex: 1;
   height: 100%;
   align-items: stretch;
-  margin: 5em 0;
+  margin: 0;
 
 }
 
@@ -236,7 +239,6 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
 }
 
 .item.__flex-end {
@@ -385,7 +387,7 @@ button {
   font-size: 3em;
   text-transform: uppercase;
   color: $primaryColor;
-  border: 1px solid $primaryColor;
+  border: 1px solid $white;
 
   &:hover {
     background: $primaryColor;

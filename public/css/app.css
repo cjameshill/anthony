@@ -47,18 +47,18 @@ table {
   box-sizing: border-box; }
 
 ::-moz-selection {
-  color: white;
+  color: linear-gradient(white, #f2f2f2);
   background: #ff5100; }
 
 ::selection {
-  color: white;
+  color: linear-gradient(white, #f2f2f2);
   background: #ff5100; }
 
 html, body {
   overflow-x: hidden;
   font-size: 10px;
   font-family: Helvetica, sans-serif;
-  color: white; }
+  color: linear-gradient(white, #f2f2f2); }
 
 body {
   position: relative;
@@ -87,6 +87,8 @@ h4 {
   font-size: 1.618em; }
 
 p {
+  margin: 0.3em 0;
+  line-height: 1.3em;
   letter-spacing: -0.05em; }
 
 .text__secondary-font {
@@ -142,7 +144,7 @@ svg.icons__contact {
   transform: translateY(0.5em); }
 
 .text__secondary-color {
-  color: black; }
+  color: #1a1000; }
 
 .text__third-color {
   color: gray; }
@@ -154,10 +156,11 @@ svg.icons__contact {
   color: #f2f2f2; }
 
 .__primary-color {
-  background: white; }
+  background: -webkit-linear-gradient(white, #f2f2f2);
+  background: linear-gradient(white, #f2f2f2); }
 
 .__secondary-color {
-  background: black; }
+  background: #1a1000; }
 
 .__third-color {
   background: gray; }
@@ -183,13 +186,13 @@ svg.icons__contact {
   overflow: visible; }
 
 .section__full {
-  height: 100vh; }
+  height: 125vh; }
 
 .section__auto {
   height: auto; }
   @media all and (min-width: 40em) {
     .section__auto {
-      height: 100vh; } }
+      height: 125vh; } }
 
 .overlay {
   display: none;
@@ -221,6 +224,7 @@ body {
   display: flex;
   width: 90%;
   margin: 0 auto;
+  max-width: 1400px;
   z-index: 2; }
 
 .grid__columns {
@@ -234,7 +238,7 @@ body {
   height: 100%;
   -webkit-box-align: stretch;
   align-items: stretch;
-  margin: 5em 0; }
+  margin: 0; }
 
 .grid__nowrap {
   flex-wrap: nowrap; }
@@ -280,8 +284,7 @@ body {
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  align-items: center;
-  min-width: 300px; }
+  align-items: center; }
 
 .item.__flex-end {
   -webkit-box-align: end;
@@ -353,7 +356,7 @@ nav ul {
     text-decoration: none;
     border-bottom: 3px solid transparent;
     font-size: 2em;
-    color: black; }
+    color: #1a1000; }
     nav ul a:hover {
       border-bottom: 3px solid #ff5100;
       text-decoration: none; }
@@ -401,11 +404,12 @@ button {
   background: none;
   font-size: 3em;
   text-transform: uppercase;
-  color: white;
+  color: linear-gradient(white, #f2f2f2);
   border: 1px solid white; }
   .button__primary:hover {
-    background: white;
-    color: black; }
+    background: -webkit-linear-gradient(white, #f2f2f2);
+    background: linear-gradient(white, #f2f2f2);
+    color: #1a1000; }
 
 .hide-on-small {
   display: none; }
@@ -425,7 +429,7 @@ button {
   position: absolute;
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 125vh;
   bottom: -50%;
   margin: 0 auto;
   -webkit-box-pack: center;
@@ -465,22 +469,31 @@ nav.nav__main ul a {
   nav.nav__main ul a a.active {
     background: orange; }
 
-nav.nav__main.reduce a {
-  font-size: 1.6em;
-  margin: 1em 0; }
+nav.nav__main.reduce {
+  display: none; }
+  @media all and (min-width: 40em) {
+    nav.nav__main.reduce {
+      display: -webkit-box;
+      display: flex; } }
+  nav.nav__main.reduce a {
+    font-size: 1.6em;
+    margin: 0.3em 0; }
+    @media all and (min-width: 40em) {
+      nav.nav__main.reduce a {
+        margin: 1em 0; } }
 
 .box__references {
   background: -webkit-linear-gradient(white, #f2f2f2);
   background: linear-gradient(white, #f2f2f2);
   padding: 2em;
   border-radius: 12px;
-  width: 100%; }
+  width: 80%;
+  max-width: 450px; }
   @media all and (min-width: 40em) {
     .box__references {
       padding: 4em 3em 4em 10em;
       -webkit-box-align: end;
       align-items: flex-end;
-      width: 300px;
       margin: 3em 40px; } }
   .box__references p {
     margin: 0 0 0.1em 0; }
@@ -492,17 +505,25 @@ nav.nav__main.reduce a {
     left: -65px; } }
 
 .profile-photo__about-me {
-  width: 80vw;
-  height: 80vw; }
+  width: 50vw;
+  height: 50vw; }
   @media all and (min-width: 40em) {
     .profile-photo__about-me {
-      width: 400px;
-      height: 400px; } }
+      width: 20vw;
+      height: 20vw; } }
 
 .section__header {
+  background: #ff5100;
   padding: 0.2em; }
 
 .column {
-  margin: 2em 0; }
+  margin: 1em 0; }
+
+strong {
+  background: #ff5100;
+  color: white; }
+
+.about-me {
+  max-width: 1000px; }
 
 /*# sourceMappingURL=app.css.map */

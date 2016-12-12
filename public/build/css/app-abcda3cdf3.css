@@ -422,25 +422,26 @@ button {
       display: none; } }
 
 .underlay {
-  position: absolute;
-  display: none;
+  display: block;
   width: 100%;
-  height: 100vh;
-  bottom: -50%;
+  height: auto;
   margin: 0 auto;
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  cursor: none;
-  z-index: 1; }
+  cursor: none; }
   @media all and (min-width: 40em) {
     .underlay {
-      display: block; } }
-  .underlay img {
-    position: absolute;
-    width: 90%;
-    height: auto; }
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      bottom: -50%;
+      z-index: 1; }
+      .underlay img {
+        position: absolute;
+        width: 90%;
+        height: auto; } }
 
 nav.nav__main {
   padding: 0 1em;
@@ -465,9 +466,15 @@ nav.nav__main ul a {
   nav.nav__main ul a a.active {
     background: orange; }
 
-nav.nav__main.reduce a {
-  font-size: 1.6em;
-  margin: 1em 0; }
+nav.nav__main.reduce {
+  display: none; }
+  @media all and (min-width: 40em) {
+    nav.nav__main.reduce {
+      display: -webkit-box;
+      display: flex; } }
+  nav.nav__main.reduce a {
+    font-size: 1.6em;
+    margin: 0.3em 0; }
 
 .box__references {
   background: -webkit-linear-gradient(white, #f2f2f2);

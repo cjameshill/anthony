@@ -1,16 +1,16 @@
 // Colors
 
 $black: hsla(0, 0, 0, 1);
-
-
-$primaryColor: hsla(0, 0, 100, 1);
-$secondaryColor: hsla(0, 0, 0, 1);
-$thirdColor: lighten($black, 50%);
-$fourthColor: hsla(19, 100%, 50%, 1);
+$white: white;
 
 $lightGrey: lighten($black, 95%);
 
 $gradientWhite: linear-gradient(white, $lightGrey);
+
+$primaryColor: $gradientWhite;
+$secondaryColor: hsl(37, 100%, 5%);
+$thirdColor: lighten($black, 50%);
+$fourthColor: hsla(19, 100%, 50%, 1);
 
 $opaqueWhite: hsla(0, 0%, 100%, 0.93);
 
