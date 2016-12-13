@@ -61,74 +61,110 @@ nav.nav__main ul {
 
 }
 
-nav.nav__main.reduce {
-  display: none;
-  @include mappy-bp(med){
-    display: flex;
-  }
+.header__main.reduce {
 
-  a {
-    font-size: 1.6em;
-    margin: 0.3em 0;
+  background: $fourthColor;
 
-    @include mappy-bp(med){
-      margin: 1em 0;
+  nav.nav__main {
+    display: none;
+    @include mappy-bp(med) {
+      display: flex;
+    }
+
+    a {
+      font-size: 1.6em;
+      margin: 0.3em 0;
+      color: $white;
+
+      &:hover {
+        border-bottom: 3px solid $white;
+      }
+      @include mappy-bp(med) {
+        margin: 1em 0;
+      }
+    }
+
+    li.active {
+      background: $white;
+      a {
+        color: $thirdColor;
+        text-decoration: none;
+      }
     }
   }
 }
 
 
-.box__references {
-  background: $gradientWhite;
-  padding: 2em;
-  border-radius: 12px;
-  width: 80%;
-  max-width: 450px;
-  //box-shadow: $lightGrey 8px 8px 15px;
 
-  @include mappy-bp(med){
-    padding: 4em 3em 4em 10em;
-    align-items: flex-end;
-    margin: 3em 40px;
+  .box__references {
+    background: $gradientWhite;
+    padding: 2em;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 450px;
+
+    p {
+      margin: 0 0 0.1em 0;
+    }
+  }
+  //
+  //.profile-photo__reference {
+  //  @include mappy-bp(med){
+  //    position: absolute;
+  //    top: -65px;
+  //    left: -65px;
+  //  }
+  //}
+
+  .profile-photo__about-me {
+    width: 50vw;
+    height: 50vw;
+
+    @include mappy-bp(med){
+      width: 25vw;
+      height: 25vw;
+
+    }
   }
 
-  p {
-    margin: 0 0 0.1em 0;
+  .section__header {
+    background: $fourthColor;
+    padding: 0.2em;
   }
-}
 
-.profile-photo__reference {
-  @include mappy-bp(med){
+  .column {
+    margin: 1em 0;
+  }
+
+  strong {
+    background: $fourthColor;
+    color: $white;
+  }
+
+  .about-me {
+    max-width: 1000px;
+  }
+
+
+  .work-life {
     position: absolute;
-    top: -65px;
-    left: -65px;
+    display: -webkit-box;
+    display: flex;
+    top: -30px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    text-align: center;
+    height: auto;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 280px;
+    left: -120px;
+
+    span.work {
+      font-family: $primaryFont;
+    }
+
+    span.life {
+      font-familty: $cursiveFont;
+    }
   }
-}
-
-.profile-photo__about-me {
-  width: 50vw;
-  height: 50vw;
-
-  @include mappy-bp(med){
-    width: 20vw;
-    height: 20vw;
-  }
-}
-
-.section__header {
-  background: $fourthColor;
-  padding: 0.2em;
-}
-
-.column {
-  margin: 1em 0;
-}
-
-strong {
-  background: $fourthColor;
-  color: $white;
-}
-
-.about-me {
-  max-width: 1000px;
-}

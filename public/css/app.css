@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Pacifico);
 @import url(https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -171,6 +171,13 @@ svg.icons__contact {
 .__light {
   background: #f2f2f2; }
 
+.hr {
+  display: block;
+  width: 100vw;
+  margin: 0 auto;
+  height: 1px;
+  background: #ff5100; }
+
 .section {
   display: -webkit-box;
   display: flex;
@@ -189,10 +196,11 @@ svg.icons__contact {
   height: 125vh; }
 
 .section__auto {
-  height: auto; }
+  min-height: 125vh;
+  padding: 5em 0; }
   @media all and (min-width: 40em) {
     .section__auto {
-      height: 125vh; } }
+      min-height: 125vh; } }
 
 .overlay {
   display: none;
@@ -346,9 +354,6 @@ nav ul {
     -webkit-box-align: center;
     align-items: center;
     padding: 0 1em; }
-    nav ul li.active a {
-      border-bottom: 3px solid #ff5100;
-      text-decoration: none; }
   nav ul a {
     line-height: 1em;
     margin: 0.3em 0;
@@ -368,7 +373,7 @@ nav ul {
 
 .header__main {
   position: fixed;
-  background: rgba(255, 255, 255, 0.93);
+  background: transparent;
   top: 0;
   width: 100vw;
   height: auto;
@@ -425,6 +430,9 @@ button {
     .show-on-small {
       display: none; } }
 
+.__position-relative {
+  position: relative; }
+
 .underlay {
   position: absolute;
   display: none;
@@ -469,48 +477,46 @@ nav.nav__main ul a {
   nav.nav__main ul a a.active {
     background: orange; }
 
-nav.nav__main.reduce {
-  display: none; }
-  @media all and (min-width: 40em) {
-    nav.nav__main.reduce {
-      display: -webkit-box;
-      display: flex; } }
-  nav.nav__main.reduce a {
-    font-size: 1.6em;
-    margin: 0.3em 0; }
+.header__main.reduce {
+  background: #ff5100; }
+  .header__main.reduce nav.nav__main {
+    display: none; }
     @media all and (min-width: 40em) {
-      nav.nav__main.reduce a {
-        margin: 1em 0; } }
+      .header__main.reduce nav.nav__main {
+        display: -webkit-box;
+        display: flex; } }
+    .header__main.reduce nav.nav__main a {
+      font-size: 1.6em;
+      margin: 0.3em 0;
+      color: white; }
+      .header__main.reduce nav.nav__main a:hover {
+        border-bottom: 3px solid white; }
+      @media all and (min-width: 40em) {
+        .header__main.reduce nav.nav__main a {
+          margin: 1em 0; } }
+    .header__main.reduce nav.nav__main li.active {
+      background: white; }
+      .header__main.reduce nav.nav__main li.active a {
+        color: gray;
+        text-decoration: none; }
 
 .box__references {
   background: -webkit-linear-gradient(white, #f2f2f2);
   background: linear-gradient(white, #f2f2f2);
   padding: 2em;
   border-radius: 12px;
-  width: 80%;
+  width: 85%;
   max-width: 450px; }
-  @media all and (min-width: 40em) {
-    .box__references {
-      padding: 4em 3em 4em 10em;
-      -webkit-box-align: end;
-      align-items: flex-end;
-      margin: 3em 40px; } }
   .box__references p {
     margin: 0 0 0.1em 0; }
-
-@media all and (min-width: 40em) {
-  .profile-photo__reference {
-    position: absolute;
-    top: -65px;
-    left: -65px; } }
 
 .profile-photo__about-me {
   width: 50vw;
   height: 50vw; }
   @media all and (min-width: 40em) {
     .profile-photo__about-me {
-      width: 20vw;
-      height: 20vw; } }
+      width: 25vw;
+      height: 25vw; } }
 
 .section__header {
   background: #ff5100;
@@ -525,5 +531,23 @@ strong {
 
 .about-me {
   max-width: 1000px; }
+
+.work-life {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  top: -30px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  text-align: center;
+  height: auto;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 280px;
+  left: -120px; }
+  .work-life span.work {
+    font-family: "Oswald", helvetica, sans-serif; }
+  .work-life span.life {
+    font-familty: "Pacifico", cursive; }
 
 /*# sourceMappingURL=app.css.map */

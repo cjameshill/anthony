@@ -162,14 +162,46 @@
         </div>
         <div class="grid grid__columns grid__full about-me">
             <div class="column col-12">
+
                 <div data-aos="fade-right" class="item">
                     <div class="profile-photo profile-photo__about-me" style="background-image: url('/images/anthony.jpg');"></div>
                 </div>
             </div>
-            <div class="column col-12">
+            <div class="column col-12 __position-relative">
+                <div class="work-life">
+                    <span class="text__size-xlarge text__fourth-color work">WORK.</span>
+                    <span class="text__size-xlarge text__fourth-color life">Life.</span>
+                </div>
+                <div class="hr"></div>
+            </div>
+            <div class="column">
                 <div data-aos="fade-left" class="item">
-                    <p class="text__size-med text__third-color text__align-center">
-                        In my free time I am a weekly coach in <strong>Cleveland’s Adapted Football League</strong>. The Adapted Football League gives children and adults with more than 17 different types of disabilities the opportunity to <strong>participate in an organized and developmental sport</strong> that would otherwise be unavailable to them.                    </p>
+                    <div class="profile-photo" style="background-image: url('/images/rob.jpg');"></div>
+                    <p class="text__size-med text__align-center text__fourth-color">Music</p>
+                </div>
+            </div>
+            <div class="column">
+                <div data-aos="fade-left" class="item">
+                    <div class="profile-photo" style="background-image: url('/images/rob.jpg');"></div>
+                    <p class="text__size-med text__align-center text__fourth-color">Sport</p>
+                </div>
+            </div>
+            <div class="column">
+                <div data-aos="fade-left" class="item">
+                    <div class="profile-photo" style="background-image: url('/images/rob.jpg');"></div>
+                    <p class="text__size-med text__align-center text__fourth-color">Wellness</p>
+                </div>
+            </div>
+            <div class="column">
+                <div data-aos="fade-left" class="item">
+                    <div class="profile-photo" style="background-image: url('/images/rob.jpg');"></div>
+                    <p class="text__size-med text__align-center text__fourth-color">Travel</p>
+                </div>
+            </div>
+            <div class="column">
+                <div data-aos="fade-left" class="item">
+                    <div class="profile-photo" style="background-image: url('/images/jabba.jpg');"></div>
+                    <p class="text__size-med text__align-center text__fourth-color">Adapted Football League</p>
                 </div>
             </div>
         </div>
@@ -187,11 +219,11 @@
             </div>
         </div>
         <div class="grid grid__columns grid__full">
-            <div class="column col-6">
+            <div class="column col-4">
                 <div class="item">
                     <div data-aos="fade-right" class="box box__references">
                         <div class="profile-photo profile-photo__reference" style="background-image: url('/images/robertbyrne.jpg');"></div>
-                        <p class="text__size-large text__uppercase text__fourth-color">Robert Byrne</p>
+                        <p class="text__size-large text__uppercase text__fourth-color text__align-center">Robert Byrne</p>
                         <p class="text__size-small text__third-color">
                             <a href="mailto:rob.byrne@nabreweries.com">rob.byrne&#64;nabreweries.com</a>
                         </p>
@@ -201,11 +233,11 @@
                     </div>
                 </div>
             </div>
-            <div class="column col-6">
+            <div class="column col-4">
                 <div class="item">
                     <div data-aos="fade-left" class="box box__references">
                         <div class="profile-photo profile-photo__reference" style="background-image: url('/images/ryanshirk.jpg');"></div>
-                        <p class="text__size-large text__uppercase text__fourth-color">Ryan Shirk</p>
+                        <p class="text__size-large text__uppercase text__fourth-color text__align-center">Ryan Shirk</p>
                         <p class="text__size-small text__third-color">
                             <a href="mailto:rshirk@bluejackets.com">rshirk&#64;bluejackets.com</a>
                         </p>
@@ -215,11 +247,11 @@
                     </div>
                 </div>
             </div>
-            <div class="column col-6">
+            <div class="column col-4">
                 <div class="item">
                     <div data-aos="fade-right" class="box box__references">
                         <div class="profile-photo profile-photo__reference" style="background-image: url('/images/scottgrant.jpg');"></div>
-                        <p class="text__size-large text__uppercase text__fourth-color">Scott Grant</p>
+                        <p class="text__size-large text__uppercase text__fourth-color text__align-center">Scott Grant</p>
                         <p class="text__size-small text__third-color">
                             <a href="mailto:sgrant@findlay.edu">sgrant&#64;findlay.edu</a>
                         </p>
