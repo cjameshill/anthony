@@ -260,15 +260,12 @@
         </div>
     </div>
 
-    <div id="downloads" class="section section__full __fourth-color">
-        <div class="grid grid__columns">
-            <div class="column col-12">
-                <div class="item __flex-end"><p class="section__header text__light text__size-xlarge text__align-right">Contact Me</p></div>
-            </div>
-        </div>
+    <div class="section section__full __fourth-color">
         <div class="grid grid__columns grid__full">
             <div class="column col-12">
                 <div class="item">
+                    <h1 class="text__primaryColor">Contact Me.</h1>
+
                     <button data-aos="fade-up" class="button__primary">Resume</button>
                     <button data-aos="fade-up" data-aos-delay="150" class="button__primary">Professional Headshot</button>
                 </div>
