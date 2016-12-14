@@ -203,7 +203,9 @@
                 </div>
                 <div class="hr"></div>
             </div>
-            <about-me-element :element="element" v-for="element in elements" :class="{ fadeInUp: isActive, fadeOutDown: !isActive }"></about-me-element>
+            <div class="column col-12">
+                <about-me-element :element="element" v-for="element in elements" :class="{ fadeInUp: isActive, fadeOutDown: !isActive }"></about-me-element>
+            </div>
         </div>
 
     </div>
