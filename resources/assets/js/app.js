@@ -10,6 +10,8 @@ require('./bootstrap');
 require('./_scrollTo');
 require('./main');
 
+require('./vue');
+
 
 
 

@@ -4,46 +4,52 @@
 
     <div id="top" class="anchor section section__cover section__full __primary-color">
         <div class="grid grid__columns">
-            <div class="column col-6">
+            <div class="column col-12">
                 <div class="item">
                     <h1 class="text__third-color text__align-left text__padding-top">ANTHONY CANGELOSI</h1>
+                    <p class="text__size-med">Driven and experienced in client relations, sales, marketing and event operations with a passion for creating and delivering <strong>world-class user experiences</strong> through brand integration. <strong>I am not in the sports business</strong>; I am in the business of helping other businesses by strategically thinking on their behalf to maximize client revenue through sport.</p>
                 </div>
             </div>
-            <div class="column col-6 hide-on-small">
-                <div class="item">
-
+            <div class="column col-12">
+                <div class="item animated fadeInDown scroll-down">
+                <h3 class="text__third-color">Please scroll down for more.</h3>
+                    <svg class="scroll-down">
+                        <use xlink:href="#scroll-down"></use>
+                    </svg>
                 </div>
             </div>
         </div>
         <div class="underlay">
             <img src="/images/infographic-USA_fill.png" alt="">
-            <img data-aos="fade-up" data-aos-offset="0" class="aos-1" src="/images/infographic-NFL.png" alt="">
-            <img data-aos="fade-up" data-aos-delay="250" data-aos-offset="0" class="aos-2" src="/images/infographic-MLS.png" alt="">
+            <img data-aos="fade-up" data-aos-offset="300" class="aos-1" src="/images/infographic-NFL.png" alt="">
+            <img data-aos="fade-up" data-aos-delay="250" data-aos-offset="300" class="aos-2" src="/images/infographic-MLS.png" alt="">
         </div>
     </div>
 
 
-    <div id="work-experience" class="anchor section section__full __secondary-color">
+    <div id="work-experience" class="anchor section section__extended __secondary-color">
         <div class="grid grid__columns">
             <div class="column col-12">
                 <div class="item __flex-end"><p class="section__header text__light text__size-xlarge text__align-right">Work Experience</p></div>
             </div>
         </div>
         <div class="grid grid__columns grid__full">
-            <div class="column col-4">
+            <div class="column col-6">
                 <div data-aos="fade-right" class="item">
-                    <p class="text__size-large text__fourth-color text__uppercase">MLS.</p>
-                    <p class="text__size-large text__fourth-color text__uppercase">NFL.</p>
+                    <p class="text__primary-font text__size-xlarge text__primary-color text__uppercase text__align-center">
+                        National Football League
+                    </p>
+                    <p class="text__primary-font text__size-large text__primary-color text__align-center">
+                        Cleveland, OH
+                    </p>
+                    <p class="text__size-med text__third-color text__align-center">
+                        <i>Manager of Corporate Partnership Activation, Cleveland Browns</i>
+                    </p>
                 </div>
             </div>
-            <div class="column col-4 hide-on-small">
-                <div class="item">
-                    <p class="text__size-large text__third-color"></p>
-                </div>
-            </div>
-            <div class="column col-4">
+            <div class="column col-6">
                 <div data-aos="fade-left" class="item">
-                    {{--<p class="text__size-med text__fourth-color text__align-right text__uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur corporis culpa ea nam nemo officiis tempore! Aut fugiat in quos voluptates? Accusantium architecto cum dolor expedita nulla, omnis praesentium.</p>--}}
+                    <img class="image__infographic" src="/images/infographic-NFL-Stats.png" alt="">
                 </div>
             </div>
         </div>
@@ -56,21 +62,36 @@
     </div>
 
 
-    <div class="section section__auto __primary-color">
+    <div class="section section__extended __primary-color">
         <div class="grid grid__columns grid__full">
-            <div class="column col-4">
+            <div class="column col-6">
                 <div data-aos="fade-right" class="item">
-                    <p class="text__size-med text__third-color text__align-left text__uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque iusto labore provident sapiente temporibus.</p>
+                    <p class="text__primary-font text__size-xlarge text__secondary-color text__uppercase text__align-center">
+                        Major Baseball League
+                    </p>
+                    <p class="text__primary-font text__size-large text__secondary-color text__align-center">
+                        Sydney, Australia
+                    </p>
+                    <p class="text__size-med text__third-color text__align-center">
+                        <i>Commercial Director, Sydney Blue Sox</i>
+                    </p>
                 </div>
             </div>
-            <div class="column col-4 hide-on-small">
-                <div class="item">
-                    <p class="text__size-large text__third-color"></p>
-                </div>
-            </div>
-            <div class="column col-4">
-                <div data-aos="fade-left" class="item">
-                    <p class="text__size-med text__third-color text__align-right text__uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur corporis culpa ea nam nemo officiis tempore! Aut fugiat in quos voluptates? Accusantium architecto cum dolor expedita nulla, omnis praesentium.</p>
+            <div class="column col-6">
+                <div data-aos="fade-left" class="item pie-chart__MLB">
+                    <figure>
+                        <figcaption></figcaption>
+                        <div class="pie__caption pie1__caption"><h4>Lead the committee for leveraging event for ABL</h4></div>
+                        <div class="pie__caption pie2__caption"><h4>Game Day Operations</h4></div>
+                        <div class="pie__caption pie3__caption"><h4>Local Activations</h4></div>
+                        <div class="pie__caption pie4__caption"><h4>Entertaining Partners</h4></div>
+                        <svg class="pie-chart" viewBox="0 0 63.6619772368 63.6619772368">
+                            <circle class="pie1 pie-chart" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+                            <circle class="pie2 pie-chart" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+                            <circle class="pie3 pie-chart" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+                            <circle class="pie4 pie-chart" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+                        </svg>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -85,7 +106,15 @@
         <div class="grid grid__columns grid__full">
             <div class="column col-4">
                 <div data-aos="fade-right" class="item">
-                    <p class="text__size-med text__third-color text__uppercase text__align-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque iusto labore provident sapiente temporibus.</p>
+                    <p class="text__primary-font text__size-xlarge text__primary-color text__uppercase text__align-center">
+                        Adidas
+                    </p>
+                    <p class="text__primary-font text__size-large text__primary-color text__align-center">
+                        Herzogenaurach, Germany
+                    </p>
+                    <p class="text__size-med text__third-color text__align-center">
+                        <i>Market Research Internship</i>
+                    </p>
                 </div>
             </div>
             <div class="column col-4 hide-on-small">
@@ -115,7 +144,7 @@
         <div class="grid grid__columns grid__full">
             <div class="column col-4">
                 <div data-aos="fade-right" class="item">
-                    <p class="text__size-large text__third-color text__uppercase text__align-center">
+                    <p class="text__primary-font text__size-large text__secondary-color text__uppercase text__align-center">
                         University Of Findlay, 2016
                     </p>
                     <p class="text__size-med text__third-color text__align-center">
@@ -134,7 +163,7 @@
             </div>
             <div class="column col-4">
                 <div data-aos="fade-left" class="item">
-                    <p class="text__size-large text__third-color text__uppercase text__align-center">
+                    <p class="text__primary-font text__size-large text__secondary-color text__uppercase text__align-center">
                         University Of Stetson, 2009
                     </p>
                     <p class="text__size-med text__third-color text__align-center">
@@ -163,53 +192,20 @@
         <div class="grid grid__columns grid__full about-me">
             <div class="column col-12">
 
-                <div data-aos="fade-right" class="item">
-                    <div class="profile-photo profile-photo__about-me" style="background-image: url('/images/anthony.jpg');"></div>
+                <div data-aos="fade-right" class="item about-me__anthony">
+                    <div @mouseover="isActive = true" @mouseout="isActive = false" class="profile-photo profile-photo__about-me" style="background-image: url('/images/anthony.jpg');"></div>
                 </div>
             </div>
             <div class="column col-12 __position-relative">
-                <div class="work-life">
-                    <span class="text__size-xlarge text__fourth-color work">WORK.</span>
-                    <span class="text__size-xlarge text__fourth-color life">Life.</span>
+                <div :class="{ fadeIn: isActive, fadeOut: ! isActive }" class="work-life animated">
+                    <span class="text__size-xxlarge work">WORK.</span>
+                    <span class="text__size-xxlarge life">Life.</span>
                 </div>
                 <div class="hr"></div>
             </div>
-            <div class="column">
-                <div data-aos="fade-left" class="item">
-                    <div class="profile-photo" style="background-image: url('/images/rob.jpg');"></div>
-                    <p class="text__size-med text__align-center text__fourth-color">Music</p>
-                </div>
-            </div>
-            <div class="column">
-                <div data-aos="fade-left" class="item">
-                    <div class="profile-photo" style="background-image: url('/images/rob.jpg');"></div>
-                    <p class="text__size-med text__align-center text__fourth-color">Sport</p>
-                </div>
-            </div>
-            <div class="column">
-                <div data-aos="fade-left" class="item">
-                    <div class="profile-photo" style="background-image: url('/images/rob.jpg');"></div>
-                    <p class="text__size-med text__align-center text__fourth-color">Wellness</p>
-                </div>
-            </div>
-            <div class="column">
-                <div data-aos="fade-left" class="item">
-                    <div class="profile-photo" style="background-image: url('/images/rob.jpg');"></div>
-                    <p class="text__size-med text__align-center text__fourth-color">Travel</p>
-                </div>
-            </div>
-            <div class="column">
-                <div data-aos="fade-left" class="item">
-                    <div class="profile-photo" style="background-image: url('/images/jabba.jpg');"></div>
-                    <p class="text__size-med text__align-center text__fourth-color">Adapted Football League</p>
-                </div>
-            </div>
+            <about-me-element :element="element" v-for="element in elements" :class="{ fadeInUp: isActive, fadeOutDown: !isActive }"></about-me-element>
         </div>
 
-        {{--<div class="underlay">--}}
-            {{--<img src="/images/infographic-FL.png" alt="">--}}
-            {{--<img data-aos="fade-up" data-aos-offset="-300" class="aos-1" src="/images/infographic-Stetson.png" alt="">--}}
-        {{--</div>--}}
     </div>
 
     <div id="references" class="section section__auto __primary-color">
@@ -267,7 +263,7 @@
     <div id="downloads" class="section section__full __fourth-color">
         <div class="grid grid__columns">
             <div class="column col-12">
-                <div class="item __flex-end"><p class="section__header text__light text__size-xlarge text__align-right">Downloads</p></div>
+                <div class="item __flex-end"><p class="section__header text__light text__size-xlarge text__align-right">Contact Me</p></div>
             </div>
         </div>
         <div class="grid grid__columns grid__full">

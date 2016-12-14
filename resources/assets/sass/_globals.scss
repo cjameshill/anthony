@@ -48,6 +48,10 @@ p {
   letter-spacing: -0.05em;
 }
 
+
+.text__primary-font {
+  font-family: $primaryFont;
+}
 .text__secondary-font {
   font-family: $secondaryFont;
 }
@@ -58,6 +62,7 @@ p {
 .text__align-right { text-align: center; @include mappy-bp(med){ text-align: right; }}
 .text__align-center { text-align: center; }
 
+.text__size-xxlarge { font-size: 9em; }
 .text__size-xlarge { font-size: 6em; }
 .text__size-large { font-size: 4em; }
 .text__size-med { font-size: 2.6em; }
@@ -80,6 +85,13 @@ a {
 ///--------------------- SVG --------------------- ///
 //////////////////////////////////////////////////////////
 
+svg.scroll-down {
+  display: block;
+  width: 4em;
+  height: 4em;
+  fill: $thirdColor;
+}
+
 svg.icons__contact {
   width: 2em;
   height: 2em;
@@ -89,8 +101,21 @@ svg.icons__contact {
 
 
 ///////////////////////////////////////////////////////////
+///---------------------IMAGES ----------------------- ///
+//////////////////////////////////////////////////////////
+
+img.image__infographic {
+  width: 90%;
+  height: auto;
+}
+
+///////////////////////////////////////////////////////////
 ///--------------------- COLORS --------------------- ///
 //////////////////////////////////////////////////////////
+
+.text__primary-color {
+  color: $white;
+}
 
 .text__secondary-color {
   color: $secondaryColor;
@@ -134,7 +159,8 @@ svg.icons__contact {
   width: 100vw;
   margin: 0 auto;
   height: 1px;
-  background: $fourthColor;
+  background: $transparent;
+  border-bottom: 2px dashed lighten($secondaryColor, 10%);
 }
 
 ///////////////////////////////////////////////////////////
@@ -164,6 +190,11 @@ svg.icons__contact {
   @include mappy-bp(med){
     min-height: 125vh;
   }
+}
+
+.section__extended {
+  min-height: 150vh;
+  padding: 0 0 10em 0;
 }
 
 .overlay {
@@ -422,3 +453,26 @@ button {
 .__position-relative {
   position: relative;
 }
+
+
+///////////////////////////////////////////////////////////
+///-------------------- ANIMATION --------------------- ///
+//////////////////////////////////////////////////////////
+
+
+.animated {
+  opacity: 0;
+  animation-duration: 800ms;
+}
+
+$animationDelay: 100ms;
+
+//.animationDelay {
+//  animation-delay: $animationDelay*1;
+//}
+
+.animationDelay.a { animation-delay: $animationDelay*1;  }
+.animationDelay.b { animation-delay: $animationDelay*2;  }
+.animationDelay.c { animation-delay: $animationDelay*3;  }
+.animationDelay.d { animation-delay: $animationDelay*4;  }
+.animationDelay.e { animation-delay: $animationDelay*5;  }

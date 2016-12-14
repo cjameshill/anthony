@@ -26,20 +26,34 @@ require('vue-resource');
  */
 
 Vue.http.interceptors.push((request, next) => {
-    request.headers.set('X-CSRF-TOKEN', Laravel.csrfToken);
+    request.headers.set('X-CSRF-TOKEN', App.csrfToken);
 
     next();
 });
 
-/**
- * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by Laravel. Echo and event broadcasting
- * allows your team to easily build robust real-time web applications.
- */
+var aboutMeElement = require('./components/about-me-element.vue');
 
-// import Echo from "laravel-echo"
+var vm = new Vue({
+    el: '#app',
 
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
+    components: {
+        aboutMeElement: aboutMeElement
+    },
+
+    data: {
+        isActive: false,
+        elements: []
+    },
+
+    methods: {
+        getElements: function () {
+            this.$http.get('/api/getcontent').then((response) => { this.elements = response.data.aboutMeElements; })
+        }
+    },
+
+    created: function() {
+        console.log('new');
+        this.getElements();
+    }
+
+});
