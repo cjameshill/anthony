@@ -67,7 +67,7 @@
             <div class="column col-6">
                 <div data-aos="fade-right" class="item">
                     <p class="text__primary-font text__size-xlarge text__secondary-color text__uppercase text__align-center">
-                        Major Baseball League
+                        Major League Baseball
                     </p>
                     <p class="text__primary-font text__size-large text__secondary-color text__align-center">
                         Sydney, Australia
@@ -75,12 +75,26 @@
                     <p class="text__size-med text__third-color text__align-center">
                         <i>Commercial Director, Sydney Blue Sox</i>
                     </p>
+                    <p class="text__primary-font text__size-large text__secondary-color text__align-center">
+                        <span class="highlight__round">10</span> Full-time and <span class="highlight__round">50</span> Gameday staff managed
+                    </p>
+                    <p class="text__primary-font text__size-large text__secondary-color text__align-center">
+                        Developed <strong>strategic partnerships</strong> with local government and vendors
+                    </p>
+                    <p class="text__primary-font text__size-large text__secondary-color text__align-center">
+                        Popularizing baseball abroad
+                    </p>
+                    <p class="text__primary-font text__size-large text__secondary-color text__align-center">
+                        Lead ABL in partnership and ticket revenue
+                    </p>
+                    <img src="/images/MLB.png" alt="">
                 </div>
             </div>
             <div class="column col-6">
                 <div data-aos="fade-left" class="item pie-chart__MLB">
                     <figure>
                         <figcaption></figcaption>
+                        <div class="pie-chart__center-img"><img src="/images/MLB-OpeningSeries.png" alt=""></div>
                         <div class="pie__caption pie1__caption"><h4>Lead the committee for leveraging event for ABL</h4></div>
                         <div class="pie__caption pie2__caption"><h4>Game Day Operations</h4></div>
                         <div class="pie__caption pie3__caption"><h4>Local Activations</h4></div>
@@ -124,7 +138,12 @@
             </div>
             <div class="column col-4">
                 <div data-aos="fade-left" class="item">
-                    <p class="text__size-med text__third-color text__align-right text__uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur corporis culpa ea nam nemo officiis tempore! Aut fugiat in quos voluptates? Accusantium architecto cum dolor expedita nulla, omnis praesentium.</p>
+                    <p class="text__primary-font text__size-large text__primary-color text__align-center">
+                        International Experience
+                    </p>
+                    <p class="text__primary-font text__size-large text__primary-color text__align-center">
+                        Main Focus: Euro Cup
+                    </p>
                 </div>
             </div>
         </div>
@@ -194,18 +213,21 @@
 
                 <div data-aos="fade-right" class="item about-me__anthony">
                     <div @mouseover="isActive = true" @mouseout="isActive = false" class="profile-photo profile-photo__about-me" style="background-image: url('/images/anthony.jpg');"></div>
+                    <div class="about-me__click hide-on-small">
+                        <img src="/images/arrow.png" alt="">
+                        <p class="text__size-xlarge">Find out more about me</p>
+                    </div>
                 </div>
             </div>
-            <div class="column col-12 __position-relative">
+            <div class="column col-12 __position-relative hide-on-small">
                 <div :class="{ fadeIn: isActive, fadeOut: ! isActive }" class="work-life animated">
                     <span class="text__size-xxlarge work">WORK.</span>
                     <span class="text__size-xxlarge life">Life.</span>
                 </div>
                 <div class="hr"></div>
             </div>
-            <div class="column col-12">
                 <about-me-element :element="element" v-for="element in elements" :class="{ fadeInUp: isActive, fadeOutDown: !isActive }"></about-me-element>
-            </div>
+
         </div>
 
     </div>
@@ -220,8 +242,13 @@
             <div class="column col-4">
                 <div class="item">
                     <div data-aos="fade-right" class="box box__references">
+                        <div class="box__ribbon">
+                            <img src="/images/ribbon.png" alt="">
+                            <span class="box__ribbon__caption">Client</span>
+                        </div>
                         <div class="profile-photo profile-photo__reference" style="background-image: url('/images/robertbyrne.jpg');"></div>
                         <p class="text__size-large text__uppercase text__fourth-color text__align-center">Robert Byrne</p>
+                        <p class="text__size-med text__align-center">Sr District Manager, North American Breweries</p>
                         <p class="text__size-small text__third-color">
                             <a href="mailto:rob.byrne@nabreweries.com">rob.byrne&#64;nabreweries.com</a>
                         </p>
@@ -234,8 +261,13 @@
             <div class="column col-4">
                 <div class="item">
                     <div data-aos="fade-left" class="box box__references">
+                        <div class="box__ribbon">
+                            <img src="/images/ribbon.png" alt="">
+                            <span class="box__ribbon__caption">Co-Worker</span>
+                        </div>
                         <div class="profile-photo profile-photo__reference" style="background-image: url('/images/ryanshirk.jpg');"></div>
                         <p class="text__size-large text__uppercase text__fourth-color text__align-center">Ryan Shirk</p>
+                        <p class="text__size-med text__align-center">Vice President of Corporate Partnerships and Premium Sales</p>
                         <p class="text__size-small text__third-color">
                             <a href="mailto:rshirk@bluejackets.com">rshirk&#64;bluejackets.com</a>
                         </p>
@@ -248,8 +280,13 @@
             <div class="column col-4">
                 <div class="item">
                     <div data-aos="fade-right" class="box box__references">
+                        <div class="box__ribbon">
+                            <img src="/images/ribbon.png" alt="">
+                            <span class="box__ribbon__caption">Professor</span>
+                        </div>
                         <div class="profile-photo profile-photo__reference" style="background-image: url('/images/scottgrant.jpg');"></div>
                         <p class="text__size-large text__uppercase text__fourth-color text__align-center">Scott Grant</p>
+                        <p class="text__size-med text__align-center">President - 3ThreatLeaders / College Professor</p>
                         <p class="text__size-small text__third-color">
                             <a href="mailto:sgrant@findlay.edu">sgrant&#64;findlay.edu</a>
                         </p>
@@ -259,17 +296,23 @@
                     </div>
                 </div>
             </div>
+            <div class="column col-12">
+                <blockquote>
+                        With all that being said, on paper I have a very hard time justifying a sponsorship with the Cleveland Browns.  I did however explore a deal about three years ago to see if we could make something work.  The team has not improved and the excitement of our customers has diminished, but the quality of the sales team with the Browns has caused me to commit for another season.  My sales rep, Anthony Cangelosi, really makes me feel as if the Cleveland Browns want our brands and company to succeed.  He has brought some amazing ideas our way, really working to be a consultant for what’s important to us.  We have held events over the past few years that have far exceeded all expectations of my team, truly making for a great experience for our customers.  With his attention to detail and passion to win, we have had a lot of success and I truly believe it will only elevate in the future.
+                        I am extremely happy with our sponsorship and look forward to many years together.
+                    <p class="quote__credit">- Current Client</p>
+                </blockquote>
+            </div>
         </div>
     </div>
 
-    <div class="section section__full __fourth-color">
+    <div id="downloads" class="section section__full __fourth-color">
         <div class="grid grid__columns grid__full">
             <div class="column col-12">
                 <div class="item">
                     <h1 class="text__primaryColor">Contact Me.</h1>
 
                     <button data-aos="fade-up" class="button__primary">Resume</button>
-                    <button data-aos="fade-up" data-aos-delay="150" class="button__primary">Professional Headshot</button>
                 </div>
             </div>
         </div>

@@ -40,7 +40,7 @@ l14.7,14.7l15.5-15.5c0.8-0.8,2-0.8,2.8,0C56.7,30.9,56.7,32.2,55.9,33z M76,38c0,2
 <script src="/js/app.js"></script>
 <script>
     AOS.init({
-        duration: 600,
+        duration: 300,
         disable: 'mobile'
     });
 

@@ -20,7 +20,7 @@ $transparent: hsla(0 , 0, 0, 0);
 
 $primaryFont: 'Oswald', helvetica, sans-serif;
 $secondaryFont: Helvetica, sans-serif;
-
+$serifFont: serif;
 $cursiveFont: 'Pacifico', cursive;
 
 
@@ -41,3 +41,7 @@ $breakpoints: (
         'wide'      : 1200px,
         'mega'      : 1400px,
 );
+
+$borderRadius: 12px;
+
+$boxShadow: 0px 0px 14px lightgrey;

@@ -2564,6 +2564,47 @@ img.image__infographic {
   background: transparent;
   border-bottom: 2px dashed #4d2f00; }
 
+.highlight__round {
+  background: #ff5100;
+  padding: 0em 0.3em;
+  border-radius: 50%; }
+
+blockquote {
+  display: block;
+  position: relative;
+  padding: 1em;
+  background: -webkit-linear-gradient(white, #f2f2f2);
+  background: linear-gradient(white, #f2f2f2);
+  box-shadow: 0px 0px 14px lightgrey;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.3em;
+  font-size: 2.5em;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  border-left: 8px solid #ff5100;
+  letter-spacing: -0.05em; }
+  @media all and (min-width: 40em) {
+    blockquote {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      padding: 4em; } }
+  blockquote:first-letter {
+    float: left;
+    line-height: 0.8em;
+    font-size: 3em;
+    padding: 4px 4px 0 0; }
+  blockquote p.quote__credit {
+    text-align: right;
+    font-size: 1em;
+    color: gray;
+    text-transform: uppercase; }
+
 .section {
   display: -webkit-box;
   display: flex;
@@ -2918,12 +2959,42 @@ nav.nav__main ul a {
 .box__references {
   background: -webkit-linear-gradient(white, #f2f2f2);
   background: linear-gradient(white, #f2f2f2);
+  position: relative;
   padding: 2em;
   border-radius: 12px;
   width: 85%;
-  max-width: 450px; }
+  max-width: 450px;
+  box-shadow: 0px 0px 14px lightgrey; }
   .box__references p {
     margin: 0 0 0.1em 0; }
+
+.box__ribbon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .box__ribbon img {
+    position: absolute;
+    top: -8px;
+    left: -8px; }
+  .box__ribbon .box__ribbon__caption {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: -8px;
+    top: -8px;
+    font-size: 2.5em;
+    color: white;
+    font-family: "Oswald", helvetica, sans-serif;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .profile-photo__about-me {
   width: 50vw;
@@ -2942,13 +3013,14 @@ nav.nav__main ul a {
 
 strong {
   background: #ff5100;
-  color: white; }
+  color: #1a1000; }
 
 .about-me {
   max-width: 1000px; }
 
 .about-me__anthony {
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
 
 .work-life {
   position: absolute;
@@ -2970,6 +3042,26 @@ strong {
   .work-life span.life {
     font-family: "Pacifico", cursive; }
 
+.about-me__click {
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 350px; }
+  .about-me__click p {
+    margin-top: -70px;
+    margin-left: 50px;
+    font-family: "Pacifico", cursive;
+    line-height: 1em;
+    text-align: right;
+    color: #4d2f00;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+
+.about-me__elements .profile-photo {
+  background-size: 125%;
+  width: 180px;
+  height: 180px; }
+
 figure {
   background: none;
   display: block;
@@ -2981,14 +3073,18 @@ figure {
   width: 40em;
   padding-bottom: 40em; }
 
-figcaption {
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  width: 100%;
+.pie-chart__center-img {
   position: absolute;
+  display: -webkit-box;
+  display: flex;
+  top: 0;
   left: 0;
-  top: 40%;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
   z-index: 2; }
 
 .pie__caption {
@@ -3000,8 +3096,8 @@ figcaption {
     line-height: 1.5em; }
 
 .pie1__caption {
-  right: 15%;
-  top: 40%; }
+  right: 3%;
+  top: 35%; }
 
 .pie2__caption {
   left: 20%;

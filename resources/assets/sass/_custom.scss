@@ -98,10 +98,12 @@ nav.nav__main ul {
 
   .box__references {
     background: $gradientWhite;
+    position: relative;
     padding: 2em;
-    border-radius: 12px;
+    border-radius: $borderRadius;
     width: 85%;
     max-width: 450px;
+    box-shadow: $boxShadow;
 
     p {
       margin: 0 0 0.1em 0;
@@ -115,6 +117,36 @@ nav.nav__main ul {
   //    left: -65px;
   //  }
   //}
+
+  .box__ribbon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+      position: absolute;
+      top: -8px;
+      left: -8px;
+    }
+
+    .box__ribbon__caption {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      left: -8px;
+      top: -8px;
+      font-size: 2.5em;
+      color: $white;
+      font-family: $primaryFont;
+      text-align: center;
+      transform: rotate(-45deg);
+    }
+  }
+
 
   .profile-photo__about-me {
     width: 50vw;
@@ -138,7 +170,7 @@ nav.nav__main ul {
 
   strong {
     background: $fourthColor;
-    color: $white;
+    color: $secondaryColor;
   }
 
   .about-me {
@@ -147,6 +179,7 @@ nav.nav__main ul {
 
   .about-me__anthony {
     cursor: pointer;
+    position: relative;
   }
 
   .work-life {
@@ -176,6 +209,29 @@ nav.nav__main ul {
     }
   }
 
+  .about-me__click {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 350px;
+
+    p {
+      margin-top: -70px;
+      margin-left: 50px;
+      font-family: $cursiveFont;
+      line-height: 1em;
+      text-align: right;
+      color: lighten($secondaryColor, 10%);
+      transform: rotate(-10deg);
+    }
+  }
+
+  .about-me__elements .profile-photo {
+    background-size: 125%;
+    width: 180px;
+    height: 180px;
+  }
+
   //////////////// PIE CHART //////////////////
 
 figure {
@@ -189,15 +245,17 @@ figure {
   width: 40em;
   padding-bottom: 40em;
 }
-figcaption {
-  font-size:1rem;
-  text-align:center;
-  color:#fff;
-  width: 100%;
+
+.pie-chart__center-img {
   position: absolute;
+  display: flex;
+  top: 0;
   left: 0;
-  top:40%;
-  z-index:2;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 .pie__caption {
@@ -212,8 +270,8 @@ figcaption {
 }
 
 .pie1__caption {
-  right: 15%;
-  top: 40%;
+  right: 3%;
+  top: 35%;
 }
 
 .pie2__caption {

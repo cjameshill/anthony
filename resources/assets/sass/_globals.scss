@@ -163,6 +163,50 @@ img.image__infographic {
   border-bottom: 2px dashed lighten($secondaryColor, 10%);
 }
 
+.highlight__round {
+  background: $fourthColor;
+  padding: 0em 0.3em;
+  border-radius: 50%;
+}
+
+blockquote {
+  display: block;
+  position: relative;
+  padding: 1em;
+  background: $gradientWhite;
+  box-shadow: $boxShadow;
+  border-radius: $borderRadius;
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+  font-family: $secondaryFont;
+  line-height: 1.3em;
+  font-size: 2.5em;
+  column-count: 1;
+  border-left: 8px solid $fourthColor;
+  letter-spacing: -0.05em;
+
+  @include mappy-bp(med){
+    column-count: 2;
+    padding: 4em;
+  }
+
+  &:first-letter {
+    float: left;
+    line-height: 0.8em;
+    font-size: 3em;
+    padding: 4px 4px 0 0;
+
+  }
+
+  p.quote__credit {
+    text-align: right;
+    font-size: 1em;
+    color: $thirdColor;
+    text-transform: uppercase;
+  }
+}
+
 ///////////////////////////////////////////////////////////
 ///--------------------- SECTIONS --------------------- ///
 //////////////////////////////////////////////////////////

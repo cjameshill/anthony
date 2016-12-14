@@ -2,27 +2,27 @@
   "aboutMeElements": [
     {
       "title": "Music",
-      "photo": "images/rob.jpg",
+      "photo": "images/music.jpg",
       "number": "a"
     },
     {
       "title": "Sport",
-      "photo": "images/rob.jpg",
+      "photo": "images/sport.jpg",
       "number": "b"
     },
     {
       "title": "Wellness",
-      "photo": "images/rob.jpg",
+      "photo": "images/active.jpg",
       "number": "c"
     },
     {
       "title": "Travel",
-      "photo": "images/rob.jpg",
+      "photo": "images/travel.jpg",
       "number": "d"
     },
     {
       "title": "Adapted Football League",
-      "photo": "images/jabba.jpg",
+      "photo": "images/adaptivefootball.jpg",
       "number": "e"
     }
   ]
