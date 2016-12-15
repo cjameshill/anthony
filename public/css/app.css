@@ -6652,7 +6652,7 @@ nav ul a:hover {
   flex: 1 0 500px;
 }
 
-button {
+.button {
   display: -webkit-box;
   display: flex;
   border: none;
@@ -6664,21 +6664,21 @@ button {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em;
   margin: 0.3em;
   font-family: Helvetica, sans-serif;
   font-size: 2em;
 }
 
-.button__primary {
+a.button__primary {
   background: none;
-  font-size: 3em;
   text-transform: uppercase;
   color: linear-gradient(white, #f2f2f2);
-  border: 1px solid white;
+  border: 1px solid #1a1000;
+  text-decoration: none;
 }
 
-.button__primary:hover {
+a.button__primary:hover {
   background: -webkit-linear-gradient(white, #f2f2f2);
   background: linear-gradient(white, #f2f2f2);
   color: #1a1000;

@@ -313,6 +313,7 @@
                 <div class="item">
                     <div class="box box__references">
                     <h1 class="text__primaryColor">Contact Me.</h1>
+                        <a class="button button__primary" href="/Anthony_Cangelosi_2016-Resume.pdf">Download Resume</a>
                     <p class="text__size-med text__secondary-color">
                         <i class="fa fa-phone"></i><a href="tel:2162252877">216.225.2877</a>
                     </p>

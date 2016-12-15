@@ -457,7 +457,7 @@ nav ul {
 ///----------------------- BUTTONS ----------------------- ///
 //////////////////////////////////////////////////////////
 
-button {
+.button {
   display: flex;
   border: none;
   background: none;
@@ -466,18 +466,18 @@ button {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em;
   margin: 0.3em;
   font-family: $secondaryFont;
   font-size: 2em;
 }
 
-.button__primary {
+a.button__primary {
   background: none;
-  font-size: 3em;
   text-transform: uppercase;
   color: $primaryColor;
-  border: 1px solid $white;
+  border: 1px solid $secondaryColor;
+  text-decoration: none;
 
   &:hover {
     background: $primaryColor;
