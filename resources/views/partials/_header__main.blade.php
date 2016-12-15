@@ -5,7 +5,7 @@
             <li><a href="#education">Where I Learned</a></li>
             <li><a href="#about-me">Work Life Balance</a></li>
             <li><a href="#references">What They Are Saying</a></li>
-            <li><a href="/AnthonyCangelosi-Resume.pdf">Resume</a></li>
+            <li><a href="#downloads">Resume</a></li>
         </ul>
     </nav>
 </div>

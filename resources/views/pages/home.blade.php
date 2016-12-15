@@ -221,8 +221,9 @@
             </div>
             <div class="column col-12 __position-relative hide-on-small">
                 <div :class="{ fadeIn: isActive, fadeOut: ! isActive }" class="work-life animated">
-                    <span class="text__size-xxlarge work">WORK.</span>
-                    <span class="text__size-xxlarge life">Life.</span>
+                    <span class="text__size-xlarge work">WORK.</span>
+                    <span class="text__size-xlarge life">Life.</span>
+                    <span class="text__size-xlarge life">Passions.</span>
                 </div>
                 <div class="hr"></div>
             </div>
@@ -250,10 +251,10 @@
                         <p class="text__size-large text__uppercase text__fourth-color text__align-center">Robert Byrne</p>
                         <p class="text__size-med text__align-center">Sr District Manager, North American Breweries</p>
                         <p class="text__size-small text__third-color">
-                            <a href="mailto:rob.byrne@nabreweries.com">rob.byrne&#64;nabreweries.com</a>
+                            <i class="fa fa-envelope"></i><a href="mailto:rob.byrne@nabreweries.com">rob.byrne&#64;nabreweries.com</a>
                         </p>
                         <p class="text__size-small text__third-color">
-                            <a href="tel:2165332035">(216) 533-2035</a>
+                            <i class="fa fa-phone"></i><a href="tel:2165332035">(216) 533-2035</a>
                         </p>
                     </div>
                 </div>
@@ -269,10 +270,10 @@
                         <p class="text__size-large text__uppercase text__fourth-color text__align-center">Ryan Shirk</p>
                         <p class="text__size-med text__align-center">Vice President of Corporate Partnerships and Premium Sales</p>
                         <p class="text__size-small text__third-color">
-                            <a href="mailto:rshirk@bluejackets.com">rshirk&#64;bluejackets.com</a>
+                            <i class="fa fa-envelope"></i><a href="mailto:rshirk@bluejackets.com">rshirk&#64;bluejackets.com</a>
                         </p>
                         <p class="text__size-small text__third-color">
-                            <a href="tel:6145374773">(614) 537-4773</a>
+                            <i class="fa fa-phone"></i><a href="tel:6145374773">(614) 537-4773</a>
                         </p>
                     </div>
                 </div>
@@ -288,10 +289,10 @@
                         <p class="text__size-large text__uppercase text__fourth-color text__align-center">Scott Grant</p>
                         <p class="text__size-med text__align-center">President - 3ThreatLeaders / College Professor</p>
                         <p class="text__size-small text__third-color">
-                            <a href="mailto:sgrant@findlay.edu">sgrant&#64;findlay.edu</a>
+                            <i class="fa fa-envelope"></i><a href="mailto:sgrant@findlay.edu">sgrant&#64;findlay.edu</a>
                         </p>
                         <p class="text__size-small text__third-color">
-                            <a href="tel:4193063002">(419) 306-3002</a>
+                            <i class="fa fa-phone"></i><a href="tel:4193063002">(419) 306-3002</a>
                         </p>
                     </div>
                 </div>
@@ -310,9 +311,29 @@
         <div class="grid grid__columns grid__full">
             <div class="column col-12">
                 <div class="item">
+                    <div class="box box__references">
                     <h1 class="text__primaryColor">Contact Me.</h1>
-
-                    <button data-aos="fade-up" class="button__primary">Resume</button>
+                    <p class="text__size-med text__secondary-color">
+                        <i class="fa fa-phone"></i><a href="tel:2162252877">216.225.2877</a>
+                    </p>
+                    <p class="text__size-med text__secondary-color">
+                        <i class="fa fa-envelope"></i><a href="emailto:anthony.cangelosi@gmail.com">anthony.cangelosi&#64;gmail.com</a>
+                    </p>
+                    <p class="text__size-med text__third-color">
+                        <i class="fa fa-skype"></i>acangelosi
+                    </p>
+                    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                        <div id="SkypeButton_Call_acangelosi_1">
+                            <script type="text/javascript">
+                                Skype.ui({
+                                    "name": "dropdown",
+                                    "element": "SkypeButton_Call_acangelosi_1",
+                                    "participants": ["acangelosi"],
+                                    "imageSize": 32
+                                });
+                            </script>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

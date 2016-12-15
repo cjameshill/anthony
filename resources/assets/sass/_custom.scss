@@ -194,7 +194,11 @@ nav.nav__main ul {
     -webkit-box-pack: justify;
     justify-content: space-between;
     width: 500px;
-    left: -200px;
+    left: -210px;
+
+    span {
+      margin-right: 0.4em;
+    }
 
     span.work, span.life {
       color: lighten($secondaryColor, 10%);
