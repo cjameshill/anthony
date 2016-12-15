@@ -225,7 +225,7 @@
                     <span class="text__size-xlarge life">Life.</span>
                     <span class="text__size-xlarge life">Passions.</span>
                 </div>
-                <div class="hr"></div>
+                {{--<div class="hr"></div>--}}
             </div>
                 <about-me-element :element="element" v-for="element in elements" :class="{ fadeInUp: isActive, fadeOutDown: !isActive }"></about-me-element>
 

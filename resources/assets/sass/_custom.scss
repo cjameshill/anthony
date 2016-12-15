@@ -184,7 +184,6 @@ nav.nav__main ul {
 
   .work-life {
     position: absolute;
-    display: -webkit-box;
     display: flex;
     top: -70px;
     -webkit-transform: rotate(90deg);
@@ -193,8 +192,8 @@ nav.nav__main ul {
     height: auto;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    width: 500px;
-    left: -210px;
+    width: 600px;
+    left: -380px;
 
     span {
       margin-right: 0.4em;
@@ -217,6 +216,7 @@ nav.nav__main ul {
     position: absolute;
     display: block;
     right: 0;
+    top: 0;
     width: 350px;
 
     p {

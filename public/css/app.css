@@ -6934,8 +6934,8 @@ strong {
   height: auto;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  width: 500px;
-  left: -210px;
+  width: 600px;
+  left: -380px;
 }
 
 .work-life span {
@@ -6958,6 +6958,7 @@ strong {
   position: absolute;
   display: block;
   right: 0;
+  top: 0;
   width: 350px;
 }
 
