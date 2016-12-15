@@ -219,7 +219,7 @@
                 </div>
             </div>
                 @if($agent->isMobile())
-                <about-me-element :element="element" v-for="element in elements"></about-me-element>
+                <about-me-element :element="element" v-for="element in elements" class="fadeInUp"></about-me-element>
                 @else
                 <about-me-element :element="element" v-for="element in elements" :class="{ fadeInUp: isActive, fadeOutDown: !isActive }"></about-me-element>
                 @endif
