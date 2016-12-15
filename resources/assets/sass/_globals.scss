@@ -312,7 +312,6 @@ body {
   flex-flow: row;
   justify-content: center;
   align-items: stretch;
-  flex: 1;
 }
 
 .col-1, .col-3, .col-4, .col-6, .col-12 {
@@ -490,10 +489,10 @@ a.button__primary {
 //////////////////////////////////////////////////////////
 
 .hide-on-small {
-  display: none;
+  display: none !important;
 
   @include mappy-bp(large){
-    display: flex;
+    display: block !important;
   }
 }
 .show-on-small {

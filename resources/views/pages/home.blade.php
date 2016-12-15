@@ -202,7 +202,7 @@
         </div>
     </div>
 
-    <div id="about-me" class="section section__auto __secondary-color">
+    <div id="about-me" class="section section__auto __secondary-color __position-relative">
         <div class="grid grid__columns">
             <div class="column col-12">
                 <div class="item __flex-end"><p class="section__header text__light text__size-xlarge text__align-right">About Me</p></div>
@@ -210,7 +210,6 @@
         </div>
         <div class="grid grid__columns grid__full about-me">
             <div class="column col-12">
-
                 <div data-aos="fade-right" class="item about-me__anthony">
                     <div @mouseover="isActive = true" @mouseout="isActive = false" class="profile-photo profile-photo__about-me" style="background-image: url('/images/anthony.jpg');"></div>
                     <div class="about-me__click hide-on-small">
@@ -219,18 +218,17 @@
                     </div>
                 </div>
             </div>
-            <div class="column col-12 __position-relative hide-on-small">
-                <div :class="{ fadeIn: isActive, fadeOut: ! isActive }" class="work-life animated">
-                    <span class="text__size-xlarge work">WORK.</span>
-                    <span class="text__size-xlarge life">Life.</span>
-                    <span class="text__size-xlarge life">Passions.</span>
-                </div>
-                {{--<div class="hr"></div>--}}
-            </div>
+                @if($agent->isMobile())
+                <about-me-element :element="element" v-for="element in elements"></about-me-element>
+                @else
                 <about-me-element :element="element" v-for="element in elements" :class="{ fadeInUp: isActive, fadeOutDown: !isActive }"></about-me-element>
-
+                @endif
+    </div>
+        <div :class="{ fadeIn: isActive, fadeOut: ! isActive }" class="work-life animated">
+            <span class="text__size-xlarge work">WORK.</span>
+            <span class="text__size-xlarge life">Life.</span>
+            <span class="text__size-xlarge life">Passions.</span>
         </div>
-
     </div>
 
     <div id="references" class="section section__auto __primary-color">

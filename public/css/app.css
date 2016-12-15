@@ -6495,8 +6495,6 @@ body {
   justify-content: center;
   -webkit-box-align: stretch;
   align-items: stretch;
-  -webkit-box-flex: 1;
-  flex: 1;
 }
 
 .col-1, .col-3, .col-4, .col-6, .col-12 {
@@ -6685,13 +6683,12 @@ a.button__primary:hover {
 }
 
 .hide-on-small {
-  display: none;
+  display: none !important;
 }
 
 @media all and (min-width: 57.5em) {
   .hide-on-small {
-    display: -webkit-box;
-    display: flex;
+    display: block !important;
   }
 }
 
@@ -6927,7 +6924,7 @@ strong {
   position: absolute;
   display: -webkit-box;
   display: flex;
-  top: -70px;
+  top: 450px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   text-align: center;
@@ -6935,7 +6932,7 @@ strong {
   -webkit-box-pack: justify;
   justify-content: space-between;
   width: 600px;
-  left: -380px;
+  left: -270px;
 }
 
 .work-life span {
